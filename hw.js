@@ -1,14 +1,14 @@
 // What do each of the following Boolean expressions evaluate to?
 
-console.log (true && false);
-console.log (true || false);
-console.log (false && false);
-console.log (true && (false || true));
-console.log (false || (true && false));
-console.log (false || 1 < 5);
-console.log (5 >= 4 && 1 > 3);
-console.log (10 < 4 || 1 > 4);
-console.log (12 >= 2 && 1 < 24);
+console.log(true && false);
+console.log(true || false);
+console.log(false && false);
+console.log(true && (false || true));
+console.log(false || (true && false));
+console.log(false || 1 < 5);
+console.log(5 >= 4 && 1 > 3);
+console.log(10 < 4 || 1 > 4);
+console.log(12 >= 2 && 1 < 24);
 
 // In the JavaScript file create the following Boolean variables and choose what values they hold:
 
@@ -26,21 +26,22 @@ let hasMoneyInPocket = false;
 // following scenarios:
 
 //a.
-console.log ('should buy iceream ');
+console.log('should buy iceream ');
 let shouldByIcecream = (isHotOutside == !moneyInWallet);
-console.log (shouldByIcecream);
+console.log(shouldByIcecream);
 
 // this comes out true, but shouldn't it be false?
 // b.
 console.log ('Will go swimming ');
 let willGoSwimming = (isHotOutside == isWeekday);
-console.log (willGoSwimming);
+console.log(willGoSwimming);
 
 // c.
 console.log ('Good Day');
 let isAGoodDay = (isHotOutside == !moneyInWallet && isWeekday);
-console.log (isAGoodDay);
+console.log(isAGoodDay);
 
-//.d
+//d.
 console.log ('Buy Milk');
-let willBuyMilk = (isHotOutside && thirstLevel >= 3 && moneyInWallet >= 2
+let willBuyMilk = isHotOutside && thirstLevel >= 3 && moneyInWallet >= 2;
+console.log(willBuyMilk);

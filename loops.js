@@ -9,8 +9,7 @@ while (i < 100) {
    console.log(i); 
 } 
 
-
-console.log ('b');
+console.log('b');
 var i = 100
 
 // how to get it to stop at 0
@@ -34,4 +33,10 @@ for (let i =1; i < 100; i++) {
     }
 }
 
-console.log ('hi ');
+console.log ('d');
+
+for (let i = 0; i < 100; i++) {
+    if(!i%3) {
+        console.log(i);
+    }
+}
