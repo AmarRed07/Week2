@@ -31,16 +31,13 @@ for(let i =1; i < 100; i++) {
 
 console.log('d');
 
-
-for (let i =0; i < 100; i++)
-    if(i%3 ==0) {
-        console.log('Hello');
+for (let i = 0; i <= 100; i++) {
+    let result = '';
+    if(i%3 == 0) {
+        result += 'Hello';
+    }
+    if (i%5 == 0) {
+        result += 'world';
     } 
-    else if(i%5 == 0) {
-        console.log('World');
-    }
-    else if (i%3 !== 0 && i%5 !== 0) {
-        console.log('Hello World');
-    } else {
-        console.log(i);
-    }
+    console.log(result || i);
+}
