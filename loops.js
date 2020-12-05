@@ -19,7 +19,6 @@ while(i > 0) {
     i++;
 }
 
-
 console.log('For loops ');
 console.log('c ');
 
@@ -40,4 +39,19 @@ for (let i = 0; i <= 100; i++) {
         result += 'world';
     } 
     console.log(result || i);
+}
+
+// Or
+
+console.log ('Here is another way to do it')
+for (i = 0; i <=100; i++) {
+    if(i%3 ==0 && i%5 ==0) {
+        console.log('Hello World'); 
+    } else if(i%3 == 0) {
+        console.log('Hello');
+    } else if(i%5 ==0) {
+        console.log('World');
+    } else {
+        console.log(i);
+    }
 }
